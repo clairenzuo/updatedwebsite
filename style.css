@@ -36,7 +36,7 @@ body{
     padding-top: 1%;
 }
 
-/* LIGHT MODE - (actually black background as default) */
+/* LIGHT MODE -  */
   body.light {
     background-color: white; 
     color:white; 
@@ -46,7 +46,6 @@ body{
   body.light a {
     color:grey;
   }
-
 
   body.light .navbar .logo a{
     color: black;
@@ -106,7 +105,6 @@ body.dark .main-text h2 {
 footer.dark  {
     background-color: black;
 }   
-
 
 /* waving hand animation*/
 
@@ -173,14 +171,6 @@ ul li {
     padding-top: 0%;
 }
 
-/* .navbar a:nth-of-type(1) {
-    padding-right: 20px;
-    background: #777;
-    font-size: 2em;
-  } */
-    
-
-/* Makes sure to show what page im on for navigation*/
 .navbar .container-flex #active{ 
     text-decoration: underline 2px;
     text-underline-offset: 8px;
@@ -219,7 +209,7 @@ footer {
 footer p{
     background-color: white;
     color: black;
-    padding-bottom: 100px;
+    padding-bottom: 10%;
 }
 
 section {
@@ -228,12 +218,12 @@ section {
 }
 
 .wontainer{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory; */
+    /* overflow-y: scroll; */
     padding-top: 20%;
 }
 
-.one {
+/* .one {
     background: white;
     background: rgb(255,228,240);
     background: linear-gradient(99deg, rgba(255,228,240,1) 30%, rgba(201,148,233,1) 95%);
@@ -242,10 +232,10 @@ section {
 .two {
     background: rgb(128,228,61);
     background: linear-gradient(222deg, rgba(128,228,61,1) 24%, rgba(230,241,157,1) 58%, rgba(255,242,174,1) 72%);
-}
+} */
 
 /*change this for each screen size*/
-.one img{
+/* .one img{
     width: 100vh;
     padding-left: 3%;
     padding-top: 30%;
@@ -275,7 +265,7 @@ section {
 .title-text {
     font-size: 1.5em;
     font-weight: bold;
-}
+} */
 
 /* red PROGRESS BAR */
 .progress-container {
@@ -292,32 +282,6 @@ section {
     width: 0%;
   }
 
-/* UI/UX PAGE (GRID) *************************************************************************/
-
-.body-text {
-    text-align: left;
-    width: 90%;
-    padding-left: 10%;
-    color:white;
-    padding-bottom: 10%;
-}
-.image-galleryone {
-    display: grid;
-    padding-bottom: 10%;
-    padding-top: 30%;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-.image-gallerytwo {
-    display: grid;
-    padding-bottom: 10%;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-.body-text h2{ /*this changes the project title name */
-    font-size: 2em;
-    font-weight: bold; 
-}
 
 /* DESIGN PAGE *************************************************************************************/
 
@@ -349,7 +313,7 @@ section {
 
 /* ABOUT PAGE **************************************************************************************/
 
-.about-me img {
+/* .about-me img {
     padding-right: 5%;
     padding-left: 5%;
     padding-top: 20%;
@@ -360,7 +324,7 @@ section {
     padding-right: 7%;
     padding-top: 10%;
     padding-bottom: 13%;
-}
+} */
 
 /*CONTACT PAGE**************************************************************************************************************************/
 
@@ -570,10 +534,8 @@ background-image: url(pic6.png);
     .label {
         font-size: 2.5em; 
         left: 0%;
-        /* padding-top: 5%; */
-        
+        /* padding-top: 5%; */  
     }
-    
     
     .navbar .container-flex ul {
         /* width: 50%; */
@@ -599,7 +561,7 @@ background-image: url(pic6.png);
     }
 
     .main-text {
-        padding-left: 4%;
+        padding-left: 8%;
         margin-top: 0%;
         padding-bottom: 20%;
     }
@@ -760,6 +722,10 @@ padding-right: 5%;}
     font-weight: bold;
   }
   
+  .parallaxscroll section h1 :hover {
+      text-decoration: underline;
+      text-underline-offset: 20px;
+  }
 
   .parallaxscroll section:first-of-type {
     background-color:#7b68ee
@@ -782,7 +748,15 @@ padding-right: 5%;}
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* padding-left: 2%; */
+        padding-top: 10%;
 }
+
+.bodyandimage img {
+    max-height: 70%;
+    padding-left: 5%;
+    padding-bottom: 0%;
+}
+
 .moreinfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -790,8 +764,18 @@ padding-right: 5%;}
 }
 .main-text p{ 
     padding-top: 2%;
-    width: 70%;
-    padding-bottom: 15%;
+    width: 60%;
+    /* padding-bottom: 15%; */
+}
+
+
+
+
+.bodyandimage p{
+    width: 90%;
+    padding-right: 15%;
+    padding-bottom: 0%;
+
 }
 
 .main-text p .civixtext{  
@@ -818,6 +802,10 @@ padding-right: 5%;}
 .parallaxscroll .integrate {
     color: black;
     text-decoration: none;
+}
+
+.light .footerbar nav ul li{
+    color: red;
 }
 
 @media screen and (prefers-reduced-motion: reduce){
