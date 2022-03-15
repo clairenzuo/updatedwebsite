@@ -98,6 +98,10 @@ body.dark .main-text h2 {
     display: none;
 }   
 
+footer.dark  {
+    background-color: black;
+}   
+
 
 /* waving hand animation*/
 
@@ -171,6 +175,9 @@ ul li {
     color:black;
 }  
 
+.navbar .container-flex ul :hover{ 
+    text-decoration: underline 2px;
+}  
 
 .main-text h1{ /*main text in the middle of the page */
     font-size: 3em;
@@ -196,8 +203,8 @@ footer {
     text-align: center;
 }
 footer p{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-bottom: 100px;
 }
 
@@ -401,10 +408,10 @@ input[type=text] {
 background-image: url(artwork1.jpg);
 }
 .parallaxscroll section:nth-of-type(2) {
-background-image: url(artwork2.jpg);
+background-image: url(splashpagehome.png);
 }
 .parallaxscroll section:last-of-type {
-background-image: url(artwork3.jpg);
+background-image: url(pic6.png);
 }
 
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
@@ -534,40 +541,6 @@ background-image: url(artwork3.jpg);
         padding-top: 0%;
     }
 
-.flip-card { 
-    background-color: transparent;
-    width: 70%;
-    height: 600px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner,.flip-card-inner:focus {
-    transform: rotateY(180deg);
-  }
-
-    .flip-card-front, .flip-card-back {  /* this is the actual image width*/
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    color: black;
-  }
-  
-  .flip-card-back {
-    color: white;
-    transform: rotateY(180deg);
-  }
 
 /* DIGITALARTSCREEN***************************************************************************************************************************************************************************/
     
@@ -772,6 +745,7 @@ padding-right: 5%;}
     padding-left: 40%;
     font-weight: bold;
   }
+  
 
   .parallaxscroll section:first-of-type {
     background-color:#7b68ee
@@ -790,20 +764,42 @@ padding-right: 5%;}
 
 /*CONTACT PAGE **************************************************************************************/
 
-#mainsection {
+.bodyandimage {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-left: 2%;
+        /* padding-left: 2%; */
 }
+.moreinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding-left: 2%; */
+}
+.main-text p{ 
+    padding-top: 2%;
+    width: 70%;
+    padding-bottom: 15%;
+}
+
+.main-text p .civixtext{  
+    color: #dc143c;
+    font-weight: bold;
+}
+
+.main-text p .whylinetext{  
+    color: #ff7f50;
+    font-weight: bold;
+}
+
+.main-text p .umichtext{  
+    color: #4169e1;
+    font-weight: bold;
+}
+ 
 
 @media screen and (prefers-reduced-motion: reduce){
     .wave {
         animation: none;
     }
-
-    .flip-card:hover .flip-card-inner {
-        transform: none;
-      }
 
  .parallaxscroll section {
      background-attachment: scroll;
@@ -816,30 +812,4 @@ padding-right: 5%;}
  .progress-bar {
      background: black;
  }
-/* 
- body {
-    margin: 0;
-    padding: 0;
-    background: #121C9D;
-    font-family: sans-serif;
-}
-h1 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    color: #fff;
-    text-align: center;
 
-}
- */
-
-
-
- 
-
-
- 
- 
