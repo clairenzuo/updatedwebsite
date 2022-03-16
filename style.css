@@ -326,6 +326,38 @@ section {
     padding-bottom: 13%;
 } */
 
+
+
+.bodyandimage img {
+max-height: 70%;
+padding-left: 5%;
+padding-bottom: 0%;
+}
+
+
+.main-text p{ 
+padding-top: 2%;
+
+/* width: 60%; */
+padding-bottom: 15%;
+}
+
+
+.main-text p .civixtext{  
+color: #dc143c;
+font-weight: bold;
+}
+
+.main-text p .whylinetext{  
+color: #ff7f50;
+font-weight: bold;
+}
+
+.main-text p .umichtext{  
+color: #4169e1;
+font-weight: bold;
+}
+
 /*CONTACT PAGE**************************************************************************************************************************/
 
 input[type=text] {
